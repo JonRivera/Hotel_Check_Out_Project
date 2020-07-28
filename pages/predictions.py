@@ -95,7 +95,7 @@ column1 = dbc.Col(
         value= 2), 
 
 
-        dcc.Markdown('#### country'),
+        dcc.Markdown('#### Country by Alpha-3 code'),
         dcc.Input(
         id = 'country',
         placeholder='USA',
