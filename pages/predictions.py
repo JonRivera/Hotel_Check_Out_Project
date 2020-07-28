@@ -160,6 +160,7 @@ def predict(lead_time,stays_in_weekend_nights,stays_in_week_nights,
                previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type]]
     )
     y_pred = model0.predict(df)[0]
+    #y_pred = model0.predict(df)[0]
     return f'Person {y_pred} Booking'
 
 
