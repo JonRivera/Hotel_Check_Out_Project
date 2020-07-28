@@ -11,29 +11,29 @@ from joblib import load
 from app import app
 import pandas as pd
 #load pipeline
-model3 = load('assets/model3.joblib')
+model0= load('assets/model0.joblib')
 print('pipeline loaded')
 
 # 2 column layout. 1st column width = 4/12
 # https://dash-bootstrap-components.opensource.faculty.ai/l/components/layout
 
 
-def predict(lead_time,stays_in_weekend_nights,stays_in_week_nights,
-               previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type):
-    df = pd.DataFrame(
-        columns= ['lead_time','stays_in_weekend_nights','stays_in_week_nights','previous_cancellations',
-                    'booking_changes','adr','required_car_parking_spaces','country','deposit_type']
+# def predict(lead_time,stays_in_weekend_nights,stays_in_week_nights,
+#                previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type):
+#     df = pd.DataFrame(
+#         columns= ['lead_time','stays_in_weekend_nights','stays_in_week_nights','previous_cancellations',
+#                     'booking_changes','adr','required_car_parking_spaces','country','deposit_type']
             
-            ,
-        data=[[lead_time,stays_in_weekend_nights,stays_in_week_nights,
-               previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type]]
-    )
-    y_pred = model3.predict(df)[0]
-    return f'Person {y_pred} Booking'
+#             ,
+#         data=[[lead_time,stays_in_weekend_nights,stays_in_week_nights,
+#                previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type]]
+#     )
+#     y_pred = model0.predict(df)[0]
+#     return f'Person {y_pred} Booking'
 
-result = predict(10,20,20,20,2,100,0,'PRT','No Deposit')
-print(result)
-result2 = predict(10,20,20,20,2,100,0,'PRT','No Deposit')
+# result = predict(10,20,20,20,2,100,0,'PRT','No Deposit')
+# print(result)
+# result2 = predict(10,20,20,20,2,100,0,'PRT','No Deposit')
 
 
 column1 = dbc.Col(
@@ -159,7 +159,7 @@ def predict(lead_time,stays_in_weekend_nights,stays_in_week_nights,
         data=[[lead_time,stays_in_weekend_nights,stays_in_week_nights,
                previous_cancellations,booking_changes,adr,required_car_parking_spaces,country,deposit_type]]
     )
-    y_pred = model3.predict(df)[0]
+    y_pred = model0.predict(df)[0]
     return f'Person {y_pred} Booking'
 
 
