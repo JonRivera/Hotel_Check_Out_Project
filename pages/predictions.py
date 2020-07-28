@@ -43,10 +43,10 @@ column1 = dbc.Col(
         dcc.Slider(
                     id='lead_time', 
                     min=0,
-                    max=1000,
+                    max=800,
                     step=1,
-                    value = 40,
-                    marks={n:str(n) for n in range(0,1001,100)},
+                    value = 0,
+                    marks={n:str(n) for n in range(0,800,100)},
                     className='mb-5', 
                 ),
                 
@@ -135,7 +135,9 @@ column2 = dbc.Col(
     [
 
         html.H2('Will the person cancel or check-out from a hotel?', className='mb-5'), 
-        html.Div(id='prediction-content', className='lead')
+        html.Div(id='prediction-content', className='lead'),
+        
+        html.Img(src='assets/reception.jpg', className='img-fluid')
 
 
     ]
