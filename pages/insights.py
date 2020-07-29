@@ -16,10 +16,14 @@ column1 = dbc.Col(
             """
         
             ## Insights
+            testing
 
 
             """
         ),
+
+        html.Img(src='assets/reception.jpg', className='img-fluid'),
+
 
     ],
 )

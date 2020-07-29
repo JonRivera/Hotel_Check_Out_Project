@@ -15,13 +15,13 @@ navbar = dbc.NavbarSimple(
     brand_href='/', 
     children=[
         dbc.NavItem(dcc.Link('Predictions', href='/predictions', className='nav-link')), 
-        dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
+        #dbc.NavItem(dcc.Link('Insights', href='/insights', className='nav-link')), 
         dbc.NavItem(dcc.Link('Process', href='/process', className='nav-link')), 
     ],
     sticky='top',
-    color='light    ', 
+    color='dark', 
     light=True, 
-    dark=False
+    dark= True
 )
 
 # Footer docs:
@@ -36,10 +36,10 @@ footer = dbc.Container(
             html.P(
                 [
                     html.Span('Jonatan Rivera', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='jonatan5696@berkeley.edu'), 
+                    #html.A(html.I(className='fas fa-envelope-square mr-1'), href='jonatan5696@berkeley.edu'), 
                     html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/JonRivera'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/jonatan-rivera-5054346a/'), 
-                    #html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
+                    ##html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
                 ], 
                 className='lead'
             )
