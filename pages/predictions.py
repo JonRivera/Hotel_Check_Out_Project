@@ -180,7 +180,12 @@ column2 = dbc.Col(
 
         html.Img(src='assets/reception.jpg', className='img-fluid'),
 
-        dcc.Markdown('lead time means: days that elapsed between the entering date of the booking into the PMS and the expected arrival date'),
+        dcc.Markdown('Lead time means: "days that elapsed between the entering date of the booking and the expected arrival date(1)"'),
+
+        dcc.Markdown('ADR: average daily rate, "represents the average rental income per paid occupied room in a given time period"(2)'),
+
+        dcc.Markdown('1. https://www.sciencedirect.com/science/article/pii/S2352340918315191#bib5'),
+        dcc.Markdown('2. https://en.wikipedia.org/wiki/Average_daily_rate'),
     ]
 )
 
