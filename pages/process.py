@@ -27,7 +27,7 @@ column1 = dbc.Col(
 
             """
         ),
-        html.Img(src='assets/ROC.jpeg', className='img-fluid'),
+        html.Img(src='assets/valset.jpeg', className='img-fluid'),
 
 
 
