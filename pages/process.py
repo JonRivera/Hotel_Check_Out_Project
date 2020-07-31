@@ -16,19 +16,16 @@ column1 = dbc.Col(
             """
         
             ## Process
-            I ended up using the random forest model, as I had complications uploading the xgboost model.
+            I ended up using the random forest model, as I had complications uploading the XGBoost model.
+             Notice the difference in auc score is marginal, but the XGBoost was the better model.
 
-            Notice the difference in auc score is marginal, but the xgboost was the better model.
-
-            Also, It should be noted, the random forest model used in this app uses 9 features, and it improved compared to the random forest I originally worked with
-            that had 22 features.
-            
-
-
+            Also, It should be noted, the Random Forest model used in this app uses 9 features and works on the validation set.
+            Originally, the random forest used 22 features.
             """
         ),
         html.Img(src='assets/valset.jpeg', className='img-fluid'),
-
+        dcc.Markdown('To get a more detailed break down on the process please click the Medium Link Below: https://medium.com/@jonatanalejandrorivera/will-you-end-up-canceling-a-booked-hotel-or-end-up-checking-out-54e85243f2d9'),
+        dcc.Markdown('Plotly Dash App Code: https://github.com/JonRivera/HotelCheckOutProject/blob/master/notebooks/Unit2_Plotly_Dash_App_Code.ipynb'),
 
 
     ],
