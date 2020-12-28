@@ -1,3 +1,1 @@
-# Dash Template
-
-[Instructions](https://lambdaschool.github.io/ds/unit2/dash-template/)
+# Web Application Can Be found here: https://hotelcheckout.herokuapp.com/
